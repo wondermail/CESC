@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700" rel="stylesheet">
+    <meta name="theme-color" content="#005aaa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+
+
+
+
+    <title>Your Bill</title>
+    <style>
+      .jumbotronfirst{
+        padding-bottom: 7px;
+        padding-top: 7px;
+        background-color: #005aaa;
+      }
+      .right{
+        margin-left: 20px;
+      }
+
+
+      
+      *body {
+  margin: 0;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #eaeaea;
+  position: fixed-bottom;  
+  top: 0;
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #666;
+  text-align: center;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  cursor: grab;
+  cursor: -o-grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.main img {
+  height: auto;
+  width: 100%;
+}
+
+.button {
+  width: 300px;
+  height: 60px;
+}
+.uparhato{
+  margin-top: -32px;
+}
+
+.uparhato2{
+  margin-top: -10px;
+}
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- First Jumbotron -->
+    <div class="jumbotron jumbotron-fluid jumbotronfirst">
+    <span style="color: white" onclick="goBack()" class="right">[X] <u> Go Back</u></span>
+    </div>
+<!--     <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4adc6e34-8c9c-4146-8fde-363d4a7d6e6f.jpg" width="100%"> -->
+
+
+
+    <!-- Zoom In Zoom Out -->
+     <div id="navbar" class="uparhato border-bottom">
+    <button type="button" onclick="zoomin()"> Zoom In</button>
+    <button type="button" onclick="zoomout()"> Zoom Out</button>
+  </div>
+
+  <div class="main dragscroll uparhato2">
+    <img id="map" src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4adc6e34-8c9c-4146-8fde-363d4a7d6e6f.jpg" width="100%">
+  </div>
+  <!-- Zoom In Zoom Out -->
+
+
+
+
+
+
+<script>
+function goBack() {
+  window.history.back();
+}
+    
+
+
+// Zoom In Zoom out Starts
+
+   function zoomin() {
+  var myImg = document.getElementById("map");
+  var currWidth = myImg.clientWidth;
+  if (currWidth == 2500) return false;
+  else {
+    myImg.style.width = (currWidth + 100) + "px";
+  }
+}
+
+function zoomout() {
+  var myImg = document.getElementById("map");
+  var currWidth = myImg.clientWidth;
+  if (currWidth == 100) return false;
+  else {
+    myImg.style.width = (currWidth - 100) + "px";
+  }
+}
+
+</script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

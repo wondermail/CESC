@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700" rel="stylesheet">
+    <meta name="theme-color" content="#005aaa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <meta name="description" content="CESC - View Bill">
+    <meta property="og:title" content="Your Electricity Bill">
+    <meta property="og:url" content="https://wondermail.github.io/CESC/">
+    <meta property="og:description" content="Easily view and pay bill">
+    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/163085b2-d17e-4755-ac8e-cccf5166b308.png">
+    <meta property="og:type" content="article">
+
+
+    <title>CESC Bill</title>
+    <style>
+      .jumbotronfirst{
+        padding-bottom: 2px;
+        padding-top: 2px;
+        background-color: #005aaa;
+      }
+      #fontbar1{
+        font-size: 15px;
+        padding-top: 10px;
+      }
+      #WMLogo{
+        margin-left: 10px;
+        margin-top: 12px;
+      }
+      #logoCESC{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+      .CESC{
+        margin-left: -30px;
+      }
+      .HeaderMargin{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      p.small{
+        line-height: 1.3;
+      }
+     
+      
+      .borderright{
+        border-right: 22px solid white;
+      }
+      .borderbottom{
+        border-bottom: solid 8px white;
+      }
+      .leftspace{
+        margin-left: 10px;
+      }
+      .rightspace{
+        margin-right: 10px;
+      }
+      .buttoncolor {
+        color: black;
+      }
+
+       .btn-outline-primary {
+        color: black;
+      }
+
+
+
+
+      .btn-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited .buttoncolor {
+    background-color: #005AAA;
+      }
+      .greyed{
+        background-color: #eeeeee;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: 18px;
+      }
+      .greyedtop{
+        background-color: #eeeeee;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: 130px;
+      }
+       .greyedtop22{
+        background-color: #eeeeee;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: -32px;
+      }
+       .greyedtop23{
+        background-color: #eeeeee;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: -32px;
+      }
+       .greyedtop24{
+        background-color: #eeeeee;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: 133px;
+      }
+       .greyedtop244{
+        background-color: #eeeeee;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: -32px;
+      }
+       .greyedtop249{
+        background-color: #eeeeee;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: -2px;
+      }
+       .greyedtop2490{
+        background-color: #eeeeee;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -32px;
+      }
+/*      .pagefont{
+        font-size: 9px;
+      }*/
+      .borderleft{
+        border-left: 10px solid white;
+      }
+      .borderleft2{
+        border-left: 10px solid white;
+      }
+      .upgrey{
+        margin-top: -32px;
+      }
+      .moveuptpaytm{
+        margin-top: -32px;
+      }
+      a{
+      text-decoration: none;
+      }
+      a:visited {
+            color: #ff790b;
+        }
+      a:link {
+            color: white /*#ff790b*/;
+        }
+      a:hover {
+            color: white/* #ff790b*/;
+        }
+      a:active {
+            color: white /*#ff790b*/;
+        }
+        .fontsizewebpage{
+          font-size: 14px;
+        }
+        .fontsizebox{
+          font-size: 16px;
+        }
+        .Spaceleft{
+          margin-left: 10px;
+        }
+ 
+
+        .spacetop{
+          margin-top: -50px;
+        }
+
+        .spacetopa{
+          margin-top: -20px;
+        }
+        .fa-envelope {
+          color: #38b6ff;
+        }
+        .thisgoesup{
+          margin-top: -32px;
+        }
+        .whitecolor{
+          background: white;
+          padding-bottom: 20px;
+        }
+
+        .whitecolor2{
+          background: white;
+          padding-bottom: 20px;
+        }
+        .whitecolor24{
+          background: white;
+          padding-bottom: 5px;
+        }
+        .moveitup{
+          margin-top: -20px;
+        }
+        .moveitup2{
+          margin-top: -15px;
+        }
+         .moveitup22{
+          margin-top: -20px;
+        }
+        .up{
+          margin-top: -100px;
+          margin-left: -50px;
+        }
+        .imagemoveupwards{
+          margin-top: -42px;
+        }
+        .fa-envira{
+          color: #53A702;
+        }
+        .fa-angle-right{
+          color: #000000;
+        }
+
+
+  .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+ .iskocoloraaa{
+    background: white;
+      margin-top: -20px;
+      padding-top: 10px;
+      padding-bottom: 14px;
+    }
+            .sevenhundred{
+      font-weight: 700;
+    }
+    .rateexperience{
+    padding-top: 10px;
+}
+.fa-phone{
+  color: #0076bc;
+}
+.fa-envelope{
+  color: #0076bc;  
+}
+/*Rate Stars CSS*/
+div.ratestars {
+ display:block;
+ text-align:left;
+ direction: rtl;
+}
+
+input.ratestars { display: none; }
+
+label.ratestars {
+  box-sizing:border-box;
+  padding:0;
+  font-size: 36px;
+   color:#0076bc;
+  margin:0;
+margin-left: 5px;
+}
+
+input.ratestars:checked ~ label.ratestars:before {
+  content: '★';
+ }
+
+.ratestars input.star-50:checked ~ label.ratestars:before {
+  color:#0076bc;
+  /*text-shadow: 0 0 20px #952;*/
+}
+
+.ratestars input.star-11:checked ~ label.ratestars:before { color: #F62; }
+
+label.ratestars:before {
+  content: '☆';
+}
+/*Rate Stars CSS End*/
+.upokl{
+    margin-top: -10px;
+}
+.fa-star{
+  color: #EABF0F;
+}
+.pl{
+    margin-top: 8px;
+}
+.imagetop{
+  margin-top: -32px;
+}
+    </style>
+  </head>
+  <body>
+    <!-- First Jumbotron -->
+    <div class="noselect">
+    <div class="jumbotron jumbotron-fluid jumbotronfirst">
+      <a href="https://wondermail.github.io/CESC/">
+      <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4b8dbf7f-54b0-4125-be1e-a0649883c8bc.png" width="30px" align="left" id="WMLogo"></a>
+      <p align="center"; id="fontbar1"; id="mobilenumbertext"><span style="color: white"> 9876543210@wondermail.com</span></p>
+    </div>
+     
+
+     <!-- CESC Logo and Table -->
+     <div class="CESC">
+           <a href="https://wondermail.github.io/CESC/"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/77fe2c6d-7bae-4804-980e-5cd62b1e8a52.png" width="180px" id="logoCESC"></a>
+     </div>
+     <div class="container HeaderMargin">
+     <p class="small">YOUR ELECTRICITY BILL FROM <br>19th FEBRUARY to 21st MARCH 2019</p>
+     </div>
+
+
+     <!-- Customer Details Table -->
+     <div class="container">
+     <table align="center" class="fontsizewebpage">
+       <tr class="borderbottom">
+         <td width="150px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400"> Customer ID</span></td>
+         <td width="150px"; align="left">48265875</td>
+       </tr>
+       <tr class="borderbottom">
+         <td width="150px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400">Bill Amount</span></td>
+         <td width="150px"; align="left"><span style="color: #ff5c5c">Rs 14,200</td>
+       </tr>
+       <tr>
+         <td width="150px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400">Due Date</span></td>
+         <td width="150px"; align="left">10th April 2019</td>
+       </tr>
+     </table>
+    </div>
+
+    <!-- HR -->
+    <hr width="90%">
+
+    <!-- Buttons -->
+    <div class="container" align="center">
+    <a href="Demo.html"><button type="button" class="btn btn-outline-primary buttoncolor">View Bill</button></a>
+    <!-- Modal Button -->
+    <button type="button" class="btn btn-outline-primary leftspace rightspace buttoncolor" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Email Bill</button>
+    <!-- Modal Button Ends Here -->
+    <a href="paybill1.1.html"><button type="button" class="btn btn-outline-primary buttoncolor">Pay Bill</button></a>
+    </div>
+
+    <!-- Grey patch  -->
+    <div class="jumbotron jumbotron-fluid greyed border-top">
+    </div>
+
+    <!-- PayTm Box -->
+      <div class="moveuptpaytm">
+      <table align="left" bgcolor="white" class="fontsizebox">
+        <tr>
+          <td height="98" bgcolor="#fafafa" align="center">
+            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/825539db-f54b-44e5-a4bb-9308921aed52.png" width="80px">
+          </td>
+          <td height="98" class="borderleft">
+           <span style="font-weight: 700; line-height: 1.0"> Get Flat Rs 100 Cashback</span><br>
+           <div style="line-height: 1.0;"> For bills of Rs 1000 and above.<br>Offer valid once per user per month</div>
+          <a href="https://paytm.com/electricity-bill-payment/west-bengal/cesc-limited"><span style="color: #ff790b; font-weight: 500; line-height: 1.5;">Pay Now</span>
+          </td>
+        </tr>
+      </table>    
+    </div>
+
+
+    <!-- Grey patch  -->
+    <div class="jumbotron jumbotron-fluid greyedtop border-top">
+    </div>
+
+    <!-- Update Your Email ID Section -->
+    <div class="jumbotron jumbotron-fluid thisgoesup whitecolor border-bottom">
+      <div class="moveitup">
+      <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fas fa-envelope"></i> Update Your Email ID</p>
+      <div class="moveitup2">
+      <p class="Spaceleft" style="font-size: 16px;">Start receiving bills on your updated Email ID</p>      
+        <form>
+          <div class="form-group Spaceleft">
+            <input type="email" style="max-width: 70%" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@xyz.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+       </div>   
+        </form>
+         <button type="button" class="btn btn-primary Spaceleft">Update</button>
+         <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/6e5f8852-ffda-455e-9dc4-ade2f62affa5.png" width="100" height="100" align="right" class="imagemoveupwards">
+         </div>
+    </div>
+
+        <!-- Grey patch  -->
+    <div class="jumbotron jumbotron-fluid greyedtop22">
+    </div>
+
+
+    <!-- Go Green Save Paper Section -->
+
+    <div class="jumbotron jumbotron-fluid thisgoesup whitecolor2 border-bottom">
+      <div class="moveitup">
+      <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fab fa-envira"></i> Go Green. Save Paper</p>
+      <div class="moveitup2">
+      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px"> Subscribe to E-bill and help save paper. Once you opt for E-bill, you will receive bill on email and mobile number; <u>paper bill will be discontinued</u>.</p>
+
+      <div class="form-check Spaceleft">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Yes, I opt for E-bill
+  </label>
+</div>
+<br>
+  <button type="button" class="btn btn-outline-primary Spaceleft">Submit</button>
+      </div>
+    </div>
+  </div>
+
+        <!-- Grey patch  -->
+
+    <div class="jumbotron jumbotron-fluid greyedtop23">
+    </div>
+
+
+<!-- Locate Nearest Office -->
+      <div class="moveuptpaytm">
+      <table align="left" bgcolor="white" class="fontsizebox">
+        <tr>
+          <td height="98" width="100" bgcolor="white" align="center">
+            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/65491a87-3696-4b0a-a404-65056b9a3954.png" width="80px" class="rounded-circle border ">
+          </td>
+          <td height="98" class="borderleft2">
+           <span style="font-weight: 700; line-height: 1.2;">Locate Nearest Office</span>
+           <div style="line-height: 1.2;">Visit us for any connection & payment related query</div>
+          <a href="https://www.google.com/maps/search/CESC+payment+office+kolkata/@22.5681275,88.2304165,11z/data=!3m1!4b1"><span style="color: #0076bc; font-weight: 500; line-height: 1.2;">Get Directions </span>
+          </td>
+        </tr>
+      </table>    
+    </div>
+
+
+        <!-- Grey patch  -->
+
+    <div class="jumbotron jumbotron-fluid greyedtop24 border-top">
+    </div>
+
+
+    <!-- Rate Your Experience Section -->
+
+    <div class="jumbotron jumbotron-fluid thisgoesup whitecolor24 border-bottom">
+      <div class="moveitup">
+      <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fas fa-star"></i> Give Us Your Feedback</p>
+      <div class="moveitup22">
+      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px"> How would you rate our service?</p>
+      <!-- Star Rating -->
+<div class="ratestars spaceleft upokl">
+    <input value="5" class="ratestars star-5" id="star-5" type="radio" name="star">
+    <label class="ratestars star-5" for="star-5"></label>
+    <input value="4" class="ratestars star-4" id="star-4" type="radio" name="star">
+    <label class="ratestars star-4" for="star-4"></label>
+    <input value="3" class="ratestars star-3" id="star-3" type="radio" name="star">
+    <label class="ratestars star-3" for="star-3"></label>
+    <input value="2" class="ratestars star-2" id="star-2" type="radio" name="star">
+    <label class="ratestars star-2" for="star-2"></label>
+    <input value="1" class="ratestars star-1" id="star-1" type="radio" name="star">
+    <label class="ratestars star-1" for="star-1"></label>
+</div>
+</div>
+        <form>
+          <div class="form-group Spaceleft">
+              <textarea class="form-control spaceleft" id="exampleFormControlTextarea1" style="max-width: 85%" rows="2" placeholder="Enter your comments here" ></textarea><br>
+              <button type="button" class="btn btn-primary spaceleft">Submit Feedback</button>
+          </div>   
+        </form>
+      </div>
+    </div>
+ 
+
+
+        <!-- Grey patch  -->
+    <div class="jumbotron jumbotron-fluid greyedtop244 border-top">
+    </div>
+
+    <!-- Ad Image -->
+    <a href="https://play.google.com/store/apps/details?id=cesc.co.in&hl=en"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/eaed9a16-5a0b-4da4-a6ce-d9750cec4762.png" class="border-bottom imagetop" width="100%"></a>
+
+        <!-- Grey patch  -->
+    <div class="jumbotron jumbotron-fluid greyedtop249 border-top">
+    </div>
+
+    <!-- Contact Buttons -->
+    <table class="jumbotron jumbotron-fluid border-bottom " style="background: white; margin-top: -32px;">
+      <tr>
+        <td height="50" width="200" class="border-right" align="center">
+          <i class="fas fa-phone"></i> 
+          <a href="tel:1860 500 1912" target="_top">
+            <span style="color: black">Call Us</span>
+        </td></a>
+        <td align="center" width="200">
+        <a href="mailto:cesclimited@rp-sg.in?Subject=Hello%20again" target="_top">
+          <i class="far fa-envelope"></i><span style="color: black"> Email Us</a></span>
+        </td>
+      </tr>
+    </table>
+
+            <!-- Grey patch  -->
+    <div class="jumbotron jumbotron-fluid greyedtop2490 border-top">
+    </div>
+</div>
+    <!-- Forward Email MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Forward Bill</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter Email ID:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="abc@xyz.com">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Forward</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- MODAL Ends Here -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
