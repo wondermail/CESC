@@ -296,6 +296,25 @@ label.ratestars:before {
 .imagetop{
   margin-top: -32px;
 }
+      
+.modal-dialog {
+    margin: 20vh auto 0px auto
+}
+.fa-check-circle{
+	color: green;
+    font-size: 2.5em;
+}
+.modal-ku {
+  width: 320px;
+  margin-left: 20px;
+}
+      
+.modal-kj {
+  width: 340px;
+  margin-left: 10px;
+}
+
+
     </style>
   </head>
   <body>
@@ -472,12 +491,35 @@ label.ratestars:before {
         <form>
           <div class="form-group Spaceleft">
               <textarea class="form-control spaceleft" id="exampleFormControlTextarea1" style="max-width: 85%" rows="2" placeholder="Enter your comments here" ></textarea><br>
-              <button type="button" class="btn btn-primary spaceleft">Submit Feedback</button>
+              <button type="button" class="btn btn-primary spaceleft" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">Submit Feedback</button>
           </div>   
         </form>
       </div>
     </div>
  
+      
+      
+    <!-- Thank you for giving your valuable feedback -->
+
+    <div class="modal modal-ku" tabindex="-1" role="dialog" id="exampleModal2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <p style="text-align: center;"><i class="fas fa-check-circle"></i><br>Thanks for giving your valuable feedback.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Feedback Modal Ends Here -->
+
 
 
         <!-- Grey patch  -->
@@ -511,7 +553,7 @@ label.ratestars:before {
     </div>
 </div>
     <!-- Forward Email MODAL -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-kj" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
