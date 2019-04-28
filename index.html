@@ -6,13 +6,12 @@
 <!--     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700" rel="stylesheet">
     <meta name="theme-color" content="#005aaa">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 
 
     <meta name="description" content="CESC - View Bill">
@@ -399,11 +398,12 @@ ul {
 
 }
 .pop{
-margin-top: 5px;
-margin-left: 5px;
+margin-top: 18px;
+margin-right: 5px;
 border: 1px solid #0076bc;
 border-radius: 15px;
 padding: 5px
+
 }
 
 /*CSS English to Bangla Ends Here*/
@@ -419,10 +419,50 @@ padding: 5px
 }
 	    
 	    
-	    .divbg{
-	background-color: #F7F7F7;
-  height: 42px;
+.poping{
+margin-top: 0px;
+margin-left: 0px;
+border-radius: 15px;
+padding: 5px
 
+}
+
+	    .divbg{
+	background-color: white;
+  height: 50px;
+
+}
+
+
+
+#chaloright{
+	float: right;
+	margin-right: 8px;
+}
+
+.highlight{
+	background-color: #1968B3;
+
+}
+
+.hightlight3{
+	background-color: white;
+}
+
+.highlight2{
+	color: white;
+
+}	    
+
+/*Color Change */
+
+.select {
+    background: #1968B3;
+    color: white;
+}
+.select.highlight {
+    background: white;
+    color: black;
 }
 
 	    
@@ -444,12 +484,16 @@ padding: 5px
     </div> -->
 
 
- <div class="logo divbg" id="abcd">
-    <p id="en_click"  class="pop web_address Englishhh" style=" font-size: 12px">English</p>
-	 <p id="fr_click"   class="pop current" style=" font-size: 12px; ">বাংলা</p>
+ <div class="logo divbg noselect  " id="abcd">
+ 	<div id="chaloright">
+ 		<h5 class="pop pushme select"  style=" font-size: 17px; font-weight: normal;  ">বাংলা</h5>
+
+	</div>
 
     </div>
- <div class="noselect">    
+
+
+ 
 
 
 <!--     <div class="jumbotron jumbotron-fluid">
@@ -1046,6 +1090,11 @@ padding: 5px
 </div>
 </div>
     <!-- MODAL Ends Here -->
+    <p id="en_click"  class="poping" style=" font-size: 1px">English</p>
+	 <p id="fr_click"   class="poping " style=" font-size: 1px; ">हिंदी</p>
+
+
+    
     <!-- Optional JavaScript -->
    <script>
 	   
@@ -1143,12 +1192,46 @@ function init(){
 }
 init();
 
-// Script English To Bangla Ends here
-
 $('#abcd p').on('click', function(){
     $('p.current').removeClass('current');
     $(this).addClass('current');
 });
+
+
+
+
+
+ 	$( "h5" ).click(function() {
+  $( "#fr, #en" ).toggle();
+});
+
+$(".pushme").click(function () {
+            $(this).text(function(i, v){
+               return v === 'English' ? 'বাংলা' : 'English'
+            })
+        });
+
+// Script English To Bangla Ends here
+
+// $('#abcd p').on('click', function(){
+//     $('p.current').removeClass('current');
+//     $(this).addClass('current');
+// });
+
+
+// $(".pushme").click(function () {
+//             $(this).text(function(i, v){
+//                return v === 'English' ? 'বাংলা' : 'English'
+//             })
+//         });
+
+
+
+jQuery(function ($) {
+    $('.select').click(function () {
+        $(this).toggleClass('highlight')
+    })
+})
 
 
 
