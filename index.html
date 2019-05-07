@@ -1,22 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700" rel="stylesheet">
-    <meta name="theme-color" content="#005aaa">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	  
-	   <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="theme-color" content="#0076BC">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">          
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link rel="shortcut icon" type="image/png" href="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/48c99db6-ffd2-4ed3-bcfe-edd867b16c49.png"/>
+
+    <meta property="og:title" content="Your SRL Report">
+    <meta property="og:url" content="https://wondermail.github.io/SRL/">
+    <meta property="og:description" content="Easily view your report">
+    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ea4f78b2-2fa5-4ebe-bf70-ef00bef8161e.png">
+    <meta property="og:type" content="article">
+
+    
+ <link rel="manifest" href="manifest.json">
  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
-  <meta name="apple-mobile-web-app-title" content="CESC">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Anchal Singh">
   <link rel="apple-touch-icon" href="apple-icon-57x57.png" sizes="57x57">
   <link rel="apple-touch-icon" href="apple-icon-60x60.png" sizes="60x60">
   <link rel="apple-touch-icon" href="apple-icon-72x72.png" sizes="72x72">
@@ -27,250 +33,58 @@
   <link rel="apple-touch-icon" href="apple-icon-152x152.png" sizes="152x152">
   <link rel="apple-touch-icon" href="apple-icon-180x180.png" sizes="180x180">
   <meta name="msapplication-TileImage" content=".png">
-  <meta name="msapplication-TileColor" content="#005aaa">
-	  
-	  
-	  
-	  
+  <meta name="msapplication-TileColor" content="#0076BC">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">           
 
-
-    <meta name="description" content="CESC - View Bill">
-    <meta property="og:title" content="Your CESC Electricity Bill">
-    <meta property="og:url" content="https://wondermail.github.io/CESC/">
-    <meta property="og:description" content="Easily view and pay bill">
-    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/163085b2-d17e-4755-ac8e-cccf5166b308.png">
-    <meta property="og:type" content="article">
-
-
-    <title>CESC Bill</title>
-    <style>
-
-
-      .jumbotronfirst{
-        padding-bottom: 5px;
-        padding-top: 5px;
-        background-color: #005aaa;
-      }
-      #fontbar1{
-        font-size: 15px;
-        padding-top: 10px;
-      }
-      #WMLogo{
-        margin-left: 10px;
-        margin-top: 12px;
-      }
-      #logoCESC{
-         display: block;
-         margin-left: auto;
-         margin-right: auto;
-         }
-      .CESC{
-        margin-left: -30px;
-  margin-top: 15px;
-      }
-      .HeaderMargin{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 700;
-      }
-      p.small{
-        line-height: 1.3;
-      }
-                         .greyedtop24000{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: 132px;
-      }
-      .borderright{
-        border-right: 22px solid white;
-      }
-      .borderbottom{
-        border-bottom: solid 8px white;
-      }
-      .leftspace{
-        margin-left: 10px;
-      }
-      .rightspace{
-        margin-right: 10px;
-      }
-      .buttoncolor {
-        color: black;
-      }
-
-       .btn-outline-primary {
-        color: black;
-      }
-
-
-
-
-      .btn-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited .buttoncolor {
-    background-color: #005AAA;
-      }
-      .greyed{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: 18px;
-      }
-      .greyedtop{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: 130px;
-      }
-
-.greyedtopsection{
-      background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: -46px;
-
+<style>
+.navbar {
+  max-height:70px 
 }
 
-       .greyedtop22{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: -32px;
-      }
-       .greyedtop23{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: -32px;
-      }
-       .greyedtop24{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: 133px;
-      }
 
-             .greyedtop2400{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: -32px;
-      }
+ul {
+  list-style-type: none;
+}
 
-       .greyedtop244{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: 132px;
-      }
-       .greyedtop249{
-        background-color: #eeeeee;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        margin-top: -2px;
-      }
-       .greyedtop2490{
-        background-color: #eeeeee;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: -32px;
-      }
-/*      .pagefont{
-        font-size: 9px;
-      }*/
-      .borderleft{
-        border-left: 10px solid white;
-      }
-      .borderleft2{
-        border-left: 10px solid white;
-      }
-      .upgrey{
-        margin-top: -32px;
-      }
-      .moveuptpaytm{
-        margin-top: -32px;
-      }
-      a{
-      text-decoration: none;
-      }
-      a:visited {
-            color: #ff790b;
-        }
-      a:link {
-            color: white /*#ff790b*/;
-        }
-      a:hover {
-            color: white/* #ff790b*/;
-        }
-      a:active {
-            color: white /*#ff790b*/;
-        }
-        .fontsizewebpage{
-          font-size: 14px;
-        }
-        .fontsizebox{
-          font-size: 16px;
-        }
-        .Spaceleft{
-          margin-left: 10px;
-        }
- 
+.fa-phone{
+  color: #0076bc;
+}
 
-        .spacetop{
-          margin-top: -50px;
-        }
+.btn-primary {
+  background-color: #0076bc;
+  border-color: #0076bc;
+}
 
-        .spacetopa{
-          margin-top: -20px;
-        }
-        .fa-envelope {
-          color: #38b6ff;
-        }
-        .thisgoesup{
-          margin-top: -32px;
-        }
+.btn-outline-primary {
+  border-color: #0076bc;
+  color: #0076bc;
+}
 
-        .thisgoesupexpandSection{
-          margin-top: -80px;
+.fa-envelope{
+  color: #0076bc;  
+}
 
-        }
-        .whitecolor{
-          background: white;
-          padding-bottom: 20px;
-        }
-        .hrclass {
-          width: 90%;
-        }
+     body {
+  background-color: #eeeeee;
+  font-family: lato;
+  font-size: 15px;
+}
 
-        .whitecolor2{
-          background: white;
-          padding-bottom: 20px;
-        }
-        .whitecolor24{
-          background: white;
-          padding-bottom: 5px;
-        }
-        .moveitup{
-          margin-top: -20px;
-        }
-        .moveitup2{
-          margin-top: -15px;
-        }
-         .moveitup22{
-          margin-top: -20px;
-        }
-        .up{
-          margin-top: -100px;
-          margin-left: -50px;
-        }
-        .imagemoveupwards{
-          margin-top: -42px;
-        }
-        .fa-envira{
-          color: #53A702;
-        }
-        .fa-angle-right{
-          color: #000000;
-        }
+
+.jumbotwo{
+  margin-top: -20px;
+  background-color: white;
+}
+
+.insidejumbotwo {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.insidejumbotwo4 {
+  margin-top: -20px;
+  margin-bottom: -35px;
+}
 
 
   .noselect {
@@ -283,25 +97,154 @@
                                   supported by Chrome and Opera */
 }
 
- .iskocoloraaa{
-    background: white;
-      margin-top: -20px;
-      padding-top: 10px;
-      padding-bottom: 14px;
-    }
-            .sevenhundred{
-      font-weight: 700;
-    }
-    .rateexperience{
-    padding-top: 10px;
+.headerdown{
+  margin-top: 80px;
 }
-.fa-phone{
+
+.fa-coins{
+  color: #E18605;
+  font-size: 20px
+}
+
+
+.fa-arrow-right{
+  color: #0076BC;
+}
+
+.jumboone {
+  background-color: white;
+  margin-top: -20px;
+}
+
+.jumboone89 {
+  background-color: white;
+  margin-top: -34px;
+  border: 1px #3eb056 solid;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.jumboone55{
+  background-color: #3EB056;
+  margin-top: -20px;
+  padding-bottom: 12px; 
+  margin-right: 8px;
+  margin-left: 8px;   
+}
+
+
+.jumboone12 {
+  background-color: white;
+  margin-top: -20px;
+  padding-bottom: 20px;
+  padding-top: 28px;
+}
+
+.fa-thumbs-up{
+  color: #0076bc;
+    font-size: 2.5em;
+}
+
+.jumboone123 {
+  background-color: white;
+  margin-top: -16px;
+  padding-bottom: 0px;
+  padding-top: 28px;
+}
+
+
+
+.fa-newspaper{
+  color: #3EB056;
+}
+
+.fa-briefcase-medical{
+  color: #3EB056;  
+}
+
+.fa-info-circle{
+  color: #bab8b4;
+}
+
+.jumboone4 {
+  background-color: white;
+  margin-top: -20px;
+  padding-top: 0px; 
+
+  padding-bottom: 0px;
+}
+
+.fa-share-alt{
+  color: #0076BC;
+}
+
+.insidejumboone {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+}
+
+.insidejumboone12 {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+
+}
+
+
+
+.fa-chevron-circle-right{
+  color:black;
+}
+
+.fa-chevron-circle-right{
   color: #0076bc;
 }
-.fa-envelope{
-  color: #0076bc;  
+
+.fa-comments{
+  color: yellow;
 }
-/*Rate Stars CSS English*/
+
+
+ a{
+      text-decoration: none  !important;
+      }
+
+      a:visited {
+            color: #0076bc;
+        }
+      a:link {
+            color: #0076bc /*#ff790b*/;
+        }
+      a:hover {
+            color: #0076bc/* #ff790b*/;
+        }
+      a:active {
+            color: #0076bc /*#ff790b*/;
+        }
+
+
+.rotate90{
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari 3-8 */
+  transform: rotate(10deg);
+}        
+
+
+
+/*Carousel CSS*/
+
+    }
+    .tdsizing{
+      width: 1px;
+    }
+    .bgwhite{
+        background: white;
+    }
+    .margin{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+/*Rate Stars CSS*/
 div.ratestars {
  display:block;
  text-align:left;
@@ -314,7 +257,7 @@ label.ratestars {
   box-sizing:border-box;
   padding:0;
   font-size: 36px;
-   color:#0076bc;
+   color:#009141;
   margin:0;
 margin-left: 5px;
 }
@@ -324,7 +267,7 @@ input.ratestars:checked ~ label.ratestars:before {
  }
 
 .ratestars input.star-50:checked ~ label.ratestars:before {
-  color:#0076bc;
+  color:#009141;
   /*text-shadow: 0 0 20px #952;*/
 }
 
@@ -336,824 +279,238 @@ label.ratestars:before {
 /*Rate Stars CSS End*/
 
 
-/*Rate Stars CSS Bangla*/
-div.ratestarss {
- display:block;
- text-align:left;
- direction: rtl;
+  .adbar-hor-small
+{
+  display:flex;
+  flex-direction:row;
+  overflow-x:scroll;
+  padding-left: 10px;
+
+  margin-left: -20px;
+  margin-right: -15px;
 }
-
-input.ratestarss { display: none; }
-
-label.ratestarss {
-  box-sizing:border-box;
-  padding:0;
-  font-size: 36px;
-   color:#0076bc;
-  margin:0;
-margin-left: 5px;
-}
-
-input.ratestarss:checked ~ label.ratestarss:before {
-  content: '★';
- }
-
-.ratestarss input.star-50:checked ~ label.ratestarss:before {
-  color:#0076bc;
-  /*text-shadow: 0 0 20px #952;*/
-}
-
-.ratestarss input.star-11:checked ~ label.ratestarss:before { color: #F62; }
-
-label.ratestarss:before {
-  content: '☆';
-}
-/*Rate Stars CSS End*/
-
-
-
-.upokl{
-    margin-top: -10px;
-}
-.fa-star{
-  color: #EABF0F;
-}
-.pl{
-    margin-top: 8px;
-}
-.imagetop{
-  margin-top: -32px;
-}
-      
-.modal-dialog {
-    margin: 20vh auto 0px auto
-}
-.fa-check-circle{
-  color: green;
-    font-size: 2.5em;
-}
-.modal-ku {
-  width: 320px;
-  margin-left: 20px;
-}
-
-.modal-ku4 {
-  width: 320px;
-  margin-left: 20px;
-  margin-top: -80px
-}
-
-
-.modal-ku5 {
-  width: 320px;
-  margin-left: 20px;
-  margin-top: -40px
-}
-
-
-      
-.modal-kj {
-  width: 340px;
-  margin-left: 10px;
-}
-.fontsizesincrease{
-  font-size: 2.5em;
-  color: green;
-}
-      
-.fa-thumbs-up{
-  color: #38b6ff;
-    font-size: 2.5em;
-}
-
-
-/*CSS English to Bangla Starts*/
-
-    #en {
-  display: none;
-}
-
-
-input, label{
-  display: inline-block;
-  vertical-align: middle;
-  margin: 10px 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-
-.logo p{
-    display: inline-block;
-
-}
-.pop{
-margin-top: 18px;
-margin-right: 5px;
-border: 1px solid #0076bc;
-border-radius: 15px;
-padding: 5px
-
-}
-
-/*CSS English to Bangla Ends Here*/
-.poplll{
-  padding-top: 1px;
-  padding-bottom: 0px;
-}
-
-.current {
-
-    background-color: #0076bc;
-    color: white;
-}
-      
-      
-.poping{
-margin-top: 0px;
-margin-left: 0px;
-border-radius: 15px;
-padding: 5px
-
-}
-
-      .divbg{
-  background-color: white;
-  height: 50px;
-
+.adbar-hor-small table
+{
+  display:inline;
 }
 
 
 
-#chaloright{
-  float: right;
-  margin-right: 8px;
-}
-
-.highlight{
-  background-color: #1968B3;
-
-}
-
-.hightlight3{
-  background-color: white;
-}
-
-.highlight2{
+.btn-info {
+  background-color: #0076BC;
   color: white;
+  border-color: #0076BC; 
 
-}     
 
-/*Color Change */
 
-.select {
-    background: #1968B3;
-    color: white;
-}
-.select.highlight {
+
+.backgrounddiv{
     background: white;
-    color: black;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+.tdheight{
+  height: 244px;
+  width: 200px;
+}
+
+        .uhjk{
+            width: 20px;
+/*            height: 50px;*/
+        }
+
+.borderss{
+  border-left: 7px solid white;
+}
+.movethisup{
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.fa-file{
+  color: white;
 }
 
 
-.fa-wrench{
-	color: #009DE0;
+  .horizontal{
+        border-bottom: 1px #d1d1d1 solid;
+      }
+
+.vertical{
+        border-right: 1px #d1d1d1 solid;
+        border-bottom: 1px #d1d1d1 solid; 
+      }
+.fa-comments{
+  color: red;
 }
 
-.fa-bolt{
-  color:red;
-}
-     
-      
-      
-    </style>
+
+
+
+
+            .top{
+        border-top: 1px #d1d1d1 solid;
+      }
+
+
+      .fa-arrow-right{
+        color: #0076bc ;
+      }
+
+/*Carousel CSS Ends Here*/
+
+
+
+
+</style>
+
+
+
+    <title>SRL</title>
   </head>
   <body>
 
 
+  <!-- Nav Bar -->
+
+    <!-- Image and text -->
+  <nav class="navbar navbar-light fixed-top border-bottom noselect " style="background-color: white">
+    <a class="navbar-brand" href="#">
+    <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/0a8d3868-ab82-401c-b8de-943c47653ee0.jpg" width="80" alt="" style="margin-top: -18px;">
+  </a>
+  <form class="form-inline" style="margin-left: -10px;">
+<!--     <p class="my-2 my-sm-0">Search</p><br> -->
+    <ul><a href="tel:011-45797234" target="_top">
+      <li style="line-height: 18px; font-size: 15px; color: #767676; font-weight: 700">Contact Test Centre</li>
+      <li style="line-height: 18px; font-size: 15px; color: #0076bc; font-weight: 700; margin-left: -15px;"><i class="fas fa-phone fa-flip-horizontal"></i> 011-45797234</li>
+      <li style="line-height: 18px; font-size: 15px; color: #767676">Sector 7, Dwarka</li></a>
+    </ul>
+
+  </form>
+  </nav>
+
+
+  <!-- Nav Bar Ends Here -->
+
+
+  <!-- Section 1 -->
+
+      <div class="jumbotron jumbotron-fluid jumbotwo headerdown border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo">
+        <p style="font-size: 15px; margin-top: -5px">
+        Dear Rajesh Sisodia,<br><br>
+        Please find enclosed diagnostic report for test conducted on 5th May 2019.
+        </p>
+        <hr style="width: 98%">
+
+        <div style="text-align: center; margin-top: -5px;">
+        <a href="Demo.html">
+        <button type="button" class="btn btn-primary"><i class="fas fa-file"></i> <span style="padding-left: 5px;">VIEW REPORT</span></button></a>
+        <button type="button" class="btn btn-outline-primary  share-btn" style="margin-left: 5px;"><i class="fas fa-share-alt"></i> <span style="padding-left: 5px;">SHARE REPORT</span></button>
+        </div>
 
 
 
-
-<!--    <div class="jumbotron jumbotron-fluid jumbotronfirst">
-      <a href="https://wondermail.github.io/CESC/">
-      <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4b8dbf7f-54b0-4125-be1e-a0649883c8bc.png" width="30px" align="left" id="WMLogo"></a>
-      <p align="center"; id="fontbar1"; id="mobilenumbertext"><span style="color: white"> 9876543210@wondermail.com</span></p>
-    </div> -->
-
-
- <div class="logo divbg noselect  " id="abcd">
-  <div id="chaloright">
-    <h5 class="pop pushme select"  style=" font-size: 17px; font-weight: normal;  ">বাংলা</h5>
-
+      </div>
   </div>
-
-    </div>
-
-
- 
-
-
-<!--     <div class="jumbotron jumbotron-fluid">
-     <div class="logo">
-    <p id="fr_click" class="pop " style="color: white">Bangla</p>
-    <p id="en_click" class="pop web_address Englishhh" style="color: white">English</p>
-    </div>
-    </div>
- -->
-
-
-
-
-
-
-
-     <!-- CESC Logo and Table -->
-     <div class="CESC" >
-           <a href="https://wondermail.github.io/CESC/"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/77fe2c6d-7bae-4804-980e-5cd62b1e8a52.png" width="180px" id="logoCESC"></a>
-     </div>
-
-
-
-     <div class="container HeaderMargin noselect" id="en">
-     <p class="small">YOUR ELECTRICITY BILL FOR <br>MARCH 2019</p>
-     </div>
-
-
-     <div class="container HeaderMargin noselect" id="fr">
-     <p class="small">মার্চ 2019 জন্য আপনার বিদ্যুৎ বিল</p>
-     </div>
-
-
-     <!-- Customer Details Table -->
-     <div class="container noselect" id="en">
-     <table align="center" class="fontsizewebpage">
-       <tr class="borderbottom">
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400"> Name</span></td>
-         <td width="150px"; align="left">Gabinda Mridha</td>
-       </tr>
-       <tr class="borderbottom">
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400"> Customer ID</span></td>
-         <td width="150px"; align="left">27000I20602</td>
-       </tr>
-       <tr class="borderbottom">
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400">Bill Amount</span></td>
-         <td width="150px"; align="left"><span style="color: #ff5c5c">‎₹ 37</td>
-       </tr>
-       <tr>
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400">Due Date</span></td>
-         <td width="150px"; align="left">22nd April 2019</td>
-       </tr>
-     </table>
     </div>
 
 
 
-      <div class="container noselect" id="fr">
-     <table align="center" class="fontsizewebpage">
-       <tr class="borderbottom">
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400"> নাম</span></td>
-         <td width="150px"; align="left">Gabinda Mridha</td>
-       </tr>
-       <tr class="borderbottom">
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400"> গ্রাহক আইডি</span></td>
-         <td width="150px"; align="left">27000I20602</td>
-       </tr>
-       <tr class="borderbottom">
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400">বিলের পরিমাণ</span></td>
-         <td width="150px"; align="left"><span style="color: #ff5c5c">‎₹ 37</td>
-       </tr>
-       <tr>
-         <td width="120px"; align="right" class="borderright"><span style="color: #676767; font-weight: 400">নির্দিষ্ট তারিখ</span></td>
-         <td width="150px"; align="left">22nd April 2019</td>
-       </tr>
-     </table>
-    </div>
+  <!-- Section 1 Ends Here -->
+
+<!-- Section 7 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone12 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+        <table>
+          <tr>
+            <td width="300" style="vertical-align: center">
+              <i class="fas fa-coins"></i> <span style="padding-left: 10px; color: black">Total Loyalty Points:</span> <span style="color: #0076bc; font-weight: 900;">265</span><span style="margin-left: 10px" data-toggle="modal" data-target="#loyaltymodal" data-whatever="@mdo"><i class="fas fa-info-circle"></i></span></td>
+            <td width="100" style="text-align: right; vertical-align: center">
+            	<a href="https://portal.srlworld.com/BookTest/BookTests">
+        <button type="button" class="btn btn-success btn-sm">Redeem</button></a>              
+            </td>
+          </tr>
+        </table>
 
-
-
-
-
-
-    <!-- HR -->
-    <hr width="90%">
-
-    <!-- Buttons -->
-    <div class="container" align="center" id="en">
-    <a href="Demo.html"><button type="button" class="btn btn-outline-primary buttoncolor">View Bill</button></a>
-    <!-- Modal Button -->
-    <button type="button" class="btn btn-outline-primary leftspace rightspace buttoncolor" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Email Bill</button>
-    <!-- Modal Button Ends Here -->
-    <a href="paybill1.1.html"><button type="button" class="btn btn-outline-primary buttoncolor">Pay Bill</button></a>
-    </div>
-
-
-
-        <div class="container noselect" align="center" id="fr">
-    <a href="Demo.html"><button type="button" class="btn btn-outline-primary buttoncolor">বিল দেখুন</button></a>
-    <!-- Modal Button -->
-    <button type="button" class="btn btn-outline-primary leftspace rightspace buttoncolor" data-toggle="modal" data-target="#exampleModalhj" data-whatever="@mdo">ইমেল বিল</button>
-    <!-- Modal Button Ends Here -->
-    <a href="paybill1.1.html"><button type="button" class="btn btn-outline-primary buttoncolor">বিল পরিশোধ</button></a>
-    </div>
-
-    <!-- Grey patch  -->
-    <div class="jumbotron jumbotron-fluid greyed border-top">
-    </div>
-
-    <!-- PayTm Box -->
-      <div class="moveuptpaytm noselect" id="en">
-      <table align="left" bgcolor="white" class="fontsizebox">
-        <tr>
-          <td height="98" bgcolor="#fafafa" align="center">
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/825539db-f54b-44e5-a4bb-9308921aed52.png" width="80px">
-          </td>
-          <td height="98" class="borderleft">
-           <span style="font-weight: 700; line-height: 1.0"> Get Flat Rs 100 Cashback</span><br>
-           <div style="line-height: 1.0;"> For bills of Rs 1000 and above.<br>Offer valid once per user per month</div>
-          <a href="https://paytm.com/electricity-bill-payment/west-bengal/cesc-limited"><span style="color: #ff790b; font-weight: 500; line-height: 1.5;">Pay Now</span>
-          </td>
-        </tr>
-      </table>    
-    </div>
-
-
-          <div class="moveuptpaytm noselect" id="fr">
-      <table align="left" bgcolor="white" class="fontsizebox">
-        <tr>
-          <td height="98" bgcolor="#fafafa" align="center">
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/825539db-f54b-44e5-a4bb-9308921aed52.png" width="80px">
-          </td>
-          <td height="98" class="borderleft">
-           <span style="font-weight: 700; line-height: 1.0">  ফ্ল্যাট ₹100 ক্যাশব্যাক পান</span><br>
-           <div style="line-height: 1.0;"> 1000 এবং তার উপরে বিলের জন্য।<br>শুধুমাত্র একবার বৈধ</div>
-          <a href="https://paytm.com/electricity-bill-payment/west-bengal/cesc-limited"><span style="color: #ff790b; font-weight: 500; line-height: 1.5;">পরিশোধ এখন </span>
-          </td>
-        </tr>
-      </table>    
-    </div>
-
-    <!-- Grey patch  -->
-    <div class="jumbotron jumbotron-fluid greyedtop border-top">
-    </div>
-
-<!-- Call To Order Repairs Section -->
-
-      <div class="moveuptpaytm noselect" id="en">
-      <table align="left" bgcolor="white" class="fontsizebox">
-        <tr>
-          <td height="98" width="100" bgcolor="white" align="center">
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ddd9184d-970a-4451-99b0-7afea651befb.png" width="80px" class="rounded-circle border ">
-          </td>
-          <td height="98" class="borderleft2">
-           <span style="font-weight: 700; line-height: 1.2;">Need Electrician For Repairs</span>
-
-
-           <div style="line-height: 1.2;">Avail our services at reasonable pricing & trusted electricians</div>
-           <span style="color: #0076bc; font-weight: 500; line-height: 1.2;" id="popopop"><i class="far fa-arrow-alt-circle-down"></i> Book Now </span><!-- <a href="tel:1860 500 1912" target="_top"><span style="color: #0076bc; font-weight: 500; line-height: 1.2; margin-left: 20px"> --><!-- <i class="fas fa-phone"></i> --> <!-- Call To Order </span></a>  -->
-          </td>
-        </tr>
-      </table>    
-    </div>
-
-
-
-
-    <!-- Modal Form Book Now Ends Here -->
-
-    <div class="moveuptpaytm noselect" id="fr">
-      <table align="left" bgcolor="white" class="fontsizebox">
-        <tr>
-          <td height="98" width="100" bgcolor="white" align="center">
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ddd9184d-970a-4451-99b0-7afea651befb.png" width="80px" class="rounded-circle border ">
-          </td>
-          <td height="98" class="borderleft2">
-           <span style="font-weight: 700; line-height: 1.2;">মেরামত জন্য বৈদ্যুতিক প্রয়োজন</span>
-
-
-           <div style="line-height: 1.2;">যুক্তিসঙ্গত মূল্য আমাদের সেবা গ্রহণ করুন এবং বিশ্বস্ত বৈদ্যুতিকবিদ</div>
-           <span style="color: #0076bc; font-weight: 500; line-height: 1.2;" id="popopops"><i class="far fa-arrow-alt-circle-down"></i> এখন বুক</span>
-          </td>
-        </tr>
-      </table>    
-    </div>
-
-
-
-
-    
-
-    <!-- Grey patch  -->
-    <div class="jumbotron jumbotron-fluid greyedtop border-top">
-    </div>
-
- <!-- Expand Section -->
-
-    <div class="jumbotron jumbotron-fluid thisgoesupexpandSection whitecolor2 border-bottom noselect expsection" id="en">
-      <hr class="hrclass" id="en">
-<!--       <div class="moveitup"> -->
-<!--       <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fab fa-envira"></i> Need Help In Repair?</p> -->
-<!--       <div class="moveitup2"> -->
-      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px" id="en"><i class="fas fa-bolt"></i> Tell us the issue:</p>
-  <form id="myFormIndia4555">
-      <div class="Spaceleft  " id="en">
-    <input id="customRadio1" type="radio" name="exampleRadios" required id="en">
-      <label for="customRadio1">Lighting & Fan</label><br>
-    <input id="customRadio2" type="radio" name="exampleRadios" required id="en"> 
-      <label for="customRadio2">MCB & Wiring</label><br>
-    <input id="customRadio3" type="radio" name="exampleRadios" required id="en"> 
-      <label for="customRadio3">Appliance Repair</label><br>
-    <input id="customRadio4" type="radio" name="exampleRadios" required id="en">      
-      <label for="customRadio4">Others</label><br>
-  
-
-
-<br>
-<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modal-2" data-whatever="@mdo">Book</button>
-<button type="button" class="btn btn-outline-primary Spaceleft" > <a href="tel:1860 500 1912" target="_top"><span style="color: black"><i class="fas fa-phone fa-flip-horizontal"></i> Call To Order</span></button></a></span>
-</div>
-<!-- <br> -->
-<!-- <button type="button" id="en" class="btn btn-primary Spaceleft" data-toggle="modal" data-target="#modal-2" data-whatever="@mdo">Book</button>
-<button type="button" id="en" class="btn btn-outline-primary Spaceleft" > <a href="tel:1860 500 1912" target="_top"><span style="color: black"> Call To Order</span></button></a></span> -->
-</form>
-      </div>
-<!--     </div> -->
-  </div>
-
-
-<!-- Bangla Expand Section -->
-
-<div class="jumbotron jumbotron-fluid thisgoesupexpandSection whitecolor2 border-bottom noselect expsectionbangla" id="fr">
-      <hr class="hrclass">
-<!--       <div class="moveitup"> -->
-<!--       <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fab fa-envira"></i> Need Help In Repair?</p> -->
-<!--       <div class="moveitup2"> -->
-      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px"><i class="fas fa-bolt"></i> আমাদের সমস্যাটি বলুন:</p>
-  <form id="myFormIndia4555">
-          <div class="Spaceleft  ">
-    <input id="customRadio15" type="radio" name="exampleRadios" required>
-      <label for="customRadio15">বিদ্যুৎ ব্যর্থতা</label><br>
-    <input id="customRadio25" type="radio" name="exampleRadios" required> 
-      <label for="customRadio25">মিটার মেরামত</label><br>
-    <input id="customRadio35" type="radio" name="exampleRadios" required> 
-      <label for="customRadio35"> যন্ত্রপাতি মেরামত</label><br>
-    <input id="customRadio45" type="radio" name="exampleRadios" required>      
-      <label for="customRadio45">অন্যরা</label><br>
-</div>
-
-
-    
-  
-
-
-
-
-<br>
-<button type="button" class="btn btn-primary Spaceleft" data-toggle="modal" data-target="#modal-2" data-whatever="@mdo">Book</button>
-<button type="button" class="btn btn-outline-primary Spaceleft" > <a href="tel:1860 500 1912" target="_top"><span style="color: black"><i class="fas fa-phone fa-flip-horizontal"></i>  Call To Order</span></button></a></span>
-</form>
-      </div>
-<!--     </div> -->
-  </div>
-
-
-
-
-
-
-
-
-<!-- Expand Section Modal -->
-
-
-
-
-<!-- Expand Section Modal Ends Here -->
-
-    <div class="modal modal-ku fade" tabindex="-1" role="dialog" id="myModalabc" id="en">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <p style="text-align: center;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c8d3cca6-bdd4-4a50-9a57-c415fd2d8ecd.png" width="50px"><br><br>Thanks for choosing CESC. Our electrician will call you in 60 minutes to set up an appointment.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
- <div class="modal modal-ku fade" tabindex="-1" role="dialog" id="myModalabcbangla" id="fr">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <p style="text-align: center;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c8d3cca6-bdd4-4a50-9a57-c415fd2d8ecd.png" width="50px"><br><br>আপনার সেবা অনুমান প্রায় ২00 টাকা। আমাদের ইলেক্ট্রিশিয়ান আপনাকে অ্যাপয়েন্টমেন্ট স্থাপনের জন্য 60 মিনিটের মধ্যে কল করবেন।</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >ঘনিষ্ঠ</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 2 Repairs Address -->
-
-<div class="modal fade modal-ku4" tabindex="-1" role="dialog" id="modal-2" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Select Address</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-<div>
-  <input type="radio" id="customRadio156" name="customRadioss" >
-  <label for="customRadio156"><strong>Current Registered Address</strong></label>
-  <br>
-  133/1/E Raja Rajendra<br>
-  Lal Mitra Road<br>
-  Kolkata 700085
-
-</div>
-<br>
-<div>
-  <input type="radio" id="customRadio157" name="customRadioss" >
-  <label  for="customRadio157"><strong>Add New Address</strong></label>
-  <p style="color:#53A702">+ <u>New Address</u></p>  
-
-</div>      
 
       </div>
-      <div class="modal-footer">
-       <!--  <a href="#exampleModal5500" data-toggle="modal" data-dismiss="modal"><button type="button" class="btn btn-secondary" data-dismiss="modal">Previous</button></a> -->
-        <a href="#myModalabc" data-toggle="modal" data-dismiss="modal"><button type="button" class="btn btn-primary">Confirm</button></a>
-
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Modal 2 Repairs Address Ends Here -->
+  <!-- Section 7 Ends Here -->
 
 
+  <!-- Section 2 Feedback -->
 
 
-  <!-- Expand Section Ends Here -->
+    <div class="jumbotron jumbotron-fluid jumboone55 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+        <h6 style="font-size: 18px; font-weight: 700; "> <i class="fas fa-comments"></i><span style="color: white"> Give Us Your Feedback</span> </h6>
+<!--         <p style="font-size: 15px; margin-top: -5px">We love you Bagmishree!</p>       -->
 
-
-
-    <!-- Grey patch  -->
-    <div class="jumbotron jumbotron-fluid greyedtopsection border-top">
-    </div>
-
-    <!-- Update Your Email ID Section -->
-    <div class="jumbotron jumbotron-fluid thisgoesup whitecolor border-bottom noselect" id="en">
-      <div class="moveitup">
-      <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fas fa-envelope"></i> Update Your Email ID</p>
-      <div class="moveitup2">
-      <p class="Spaceleft" style="font-size: 16px;">Start receiving bills on your updated Email ID</p>      
-        <form id="myFormIndia1">
-          <div class="form-group Spaceleft">
-            <input id="myCheckS1" type="email" style="max-width: 70%"  placeholder="abc@xyz.com" required>
-          </div>
-       </div>   
-<button class="btn btn-outline-primary Spaceleft" type="submit"  value="Submit">Submit</button>
-        </form>
-
-        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/6e5f8852-ffda-455e-9dc4-ade2f62affa5.png" width="100" height="100" align="right" class="imagemoveupwards">
-         </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="jumbotron jumbotron-fluid thisgoesup whitecolor border-bottom noselect" id="fr">
-      <div class="moveitup">
-      <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fas fa-envelope"></i> আপনার ইমেইল আইডি আপডেট করুন</p>
-      <div class="moveitup2">
-      <p class="Spaceleft" style="font-size: 16px;">আপনার আপডেট ইমেল আইডি বিল গ্রহণ শুরু</p>      
-        <form id="myFormIndia14">
-          <div class="form-group Spaceleft">
-            <input id="myCheckS14" type="email" style="max-width: 70%"  placeholder="abc@xyz.com" required>
-          </div>
-       </div>   
-<button class="btn btn-outline-primary Spaceleft" type="submit"  value="Submit">জমা দিন</button>
-        </form>
-
-        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/6e5f8852-ffda-455e-9dc4-ade2f62affa5.png" width="100" height="100" align="right" class="imagemoveupwards">
-         </div>
-    </div>
-  </div>
-</div>
-      
-      
-              <!-- Update Your Email Address MODAL -->
-
-    <div class="modal modal-ku fade" tabindex="-1" role="dialog" id="myModalP1" id="en">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
       </div>
-      <div class="modal-body">
-        <p style="text-align: center;"><i class="fas fa-check-circle fontsizesincrease"></i><br><br>Your email ID has been<br>successfully updated.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >Close</button>
       </div>
     </div>
-  </div>
-</div>
 
 
 
-    <div class="modal modal-ku fade" tabindex="-1" role="dialog" id="myModalP146" id="fr">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <p style="text-align: center;"><i class="fas fa-check-circle fontsizesincrease"></i><br><br>আপনার ইমেইল আইডি হয়েছে<br>সফলভাবে আপডেট.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >ঘনিষ্ঠ</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="jumbotron jumbotron-fluid jumboone89  noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+      <form>
+
+        <p style="margin-bottom: 8px;"><strong>1. How long was the waiting time for your test?</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline100" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline100">0-5 mins</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline101" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline101">5-15 mins</label>
+        </div>        
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline102" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline102">15-30 mins</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline103" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline103">More than 30 mins</label>
+        </div>   
+
+        <!-- 2nd Question -->             
+
+        <p style="margin-bottom: 8px; margin-top: 20px;"><strong>2.  How do you rate behavior & capability of the pathologist?</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline12" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline12">Good</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline13" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline13">Satisfactory</label>
+        </div>        
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline14" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline14">Needs Improvement</label>
+        </div>
+      </form>
+
+      <!-- 2nd Question Ends -->
+
+       <!-- 3rd Question -->             
+
+        <p style="margin-bottom: -5px; margin-top: 20px;"><strong>3.  How do you overall rate our laboratory?</strong></p>
 
 
-
-    <!-- Update Your Email Address Modal Ends Here -->
-
-        <!-- Grey patch  -->
-    <div class="jumbotron jumbotron-fluid greyedtop22">
-    </div>
-
-
-   <!-- Go Green Save Paper Section -->
-
-    <div class="jumbotron jumbotron-fluid thisgoesup whitecolor2 border-bottom noselect" id="en">
-      <div class="moveitup">
-      <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fab fa-envira"></i> Go Green. Save Paper</p>
-      <div class="moveitup2">
-      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px"> Subscribe to E-bill and help save paper. Once you opt for E-bill, you will receive bill on email and mobile number; <u>paper bill will be discontinued</u>.</p>
-
-
-  <form id="myFormIndia">
-      <div class="Spaceleft">
-    <input id="myCheckS" type="checkbox" required> Yes, I opt for E-bill<br>  
-</div>
-<br>
-<button class="btn btn-outline-primary Spaceleft" type="submit"  value="Submit">Submit</button>
-</form>
-      </div>
-    </div>
-  </div>
-
-
-
-
-      <div class="jumbotron jumbotron-fluid thisgoesup whitecolor2 border-bottom noselect" id="fr">
-      <div class="moveitup">
-      <p class="Spaceleft" style="font-size: 18px; font-weight: 700"><i class="fab fa-envira"></i> সবুজ ব্যবহার কর. কাগজ সংরক্ষণ করুন</p>
-      <div class="moveitup2">
-      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px"> ই বিল সাবস্ক্রাইব এবং কাগজ সংরক্ষণ সাহায্য। একবার আপনি ই-বিল বেছে নেবেন, আপনি ইমেল এবং মোবাইল নম্বরে বিল পাবেন; <u>কাগজ বিল বন্ধ করা হবে</u>.</p>
-
-
-  <form id="myFormIndia88">
-      <div class="Spaceleft">
-    <input id="myCheckS88" type="checkbox" required> হ্যাঁ, আমি ই-বিল পছন্দ করি<br>  
-</div>
-<br>
-<button class="btn btn-outline-primary Spaceleft" type="submit"  value="Submit">জমা দিন</button>
-</form>
-      </div>
-    </div>
-  </div>
-      
-      
-      
-    <!-- Go Green MODAL -->
-
-   <div class="modal modal-ku fade" tabindex="-1" role="dialog" id="myModalP" id="en" >
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <p style="text-align: center;"><i class="fas fa-envelope fontsizesincrease"></i><br><br><strong>Congratulations!</strong> You have been successfully subscribed to receive bill on email & mobile number.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-   <div class="modal modal-ku fade" tabindex="-1" role="dialog" id="myModalP88" id="fr" >
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <p style="text-align: center;"><i class="fas fa-envelope fontsizesincrease"></i><br><br><strong>অভিনন্দন!</strong> ইমেল এবং মোবাইল নম্বরে বিলটি সফলভাবে সাবস্ক্রাইব করা হয়েছে।</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >ঘনিষ্ঠ</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-    <!-- Go Green Modal Ends Here -->
-
-
-
-        <!-- Grey patch  -->
-
-    <div class="jumbotron jumbotron-fluid greyedtop23">
-    </div>
-
-
-
-
-
-
-        <!-- Grey patch  -->
-
- <!--    <div class="jumbotron jumbotron-fluid greyedtop24000 border-top">
-    </div> -->
-
-<!-- Locate Nearest Office -->
-      <div class="moveuptpaytm noselect" id="en">
-      <table align="left" bgcolor="white" class="fontsizebox">
-        <tr>
-          <td height="98" width="100" bgcolor="white" align="center">
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/65491a87-3696-4b0a-a404-65056b9a3954.png" width="80px" class="rounded-circle border ">
-          </td>
-          <td height="98" class="borderleft2">
-           <span style="font-weight: 700; line-height: 1.2;">Locate Nearest Office</span>
-           <div style="line-height: 1.2;">Visit us for any connection & payment related query</div>
-          <a href="https://www.google.com/maps/search/CESC+payment+office+kolkata/@22.5681275,88.2304165,11z/data=!3m1!4b1"><span style="color: #0076bc; font-weight: 500; line-height: 1.2;">Get Directions </span>
-          </td>
-        </tr>
-      </table>    
-    </div>
-
-
-
-
-    <div class="moveuptpaytm noselect" id="fr">
-      <table align="left" bgcolor="white" class="fontsizebox">
-        <tr>
-          <td height="98" width="100" bgcolor="white" align="center">
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/65491a87-3696-4b0a-a404-65056b9a3954.png" width="80px" class="rounded-circle border ">
-          </td>
-          <td height="98" class="borderleft2">
-           <span style="font-weight: 700; line-height: 1.2;">নিকটতম অফিস সনাক্ত করুন</span>
-           <div style="line-height: 1.2;">কোন সংযোগ এবং পেমেন্ট সম্পর্কিত প্রশ্নের জন্য আমাদের দেখুন</div>
-          <a href="https://www.google.com/maps/search/CESC+payment+office+kolkata/@22.5681275,88.2304165,11z/data=!3m1!4b1"><span style="color: #0076bc; font-weight: 500; line-height: 1.2;">দিকনির্দেশ পান </span>
-          </td>
-        </tr>
-      </table>    
-    </div>
-
-
-        <!-- Grey patch  -->
-
-    <div class="jumbotron jumbotron-fluid greyedtop24 border-top">
-    </div>
-
-
-    <!-- Rate Your Experience Section -->
-
-    <div class="jumbotron noselect jumbotron-fluid thisgoesup whitecolor24 border-bottom" >
-      <div class="moveitup">
-      <p class="Spaceleft" style="font-size: 18px; font-weight: 700" id="en"><i class="fas fa-star"></i> Give Us Your Feedback</p>
-            <p class="Spaceleft" style="font-size: 18px; font-weight: 700" id="fr"><i class="fas fa-star"></i> দিতে প্রতিক্রিয়া জানান</p>      
-      <div class="moveitup22">
-      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px" id="en"> How would you rate our service?</p>
-      <p class="Spaceleft" style="font-size: 16px; line-height: 1.3; padding-top: 8px" id="fr"> আপনি কিভাবে আমাদের সেবা রেট হবে?</p>
-      <!-- Star Rating -->
-<div class="ratestars spaceleft upokl">
+        <!-- Star Rating -->
+<div class="ratestars ">
     <input value="5" class="ratestars star-5" id="star-5" type="radio" name="star">
     <label class="ratestars star-5" for="star-5"></label>
     <input value="4" class="ratestars star-4" id="star-4" type="radio" name="star">
@@ -1164,29 +521,506 @@ padding: 5px
     <label class="ratestars star-2" for="star-2"></label>
     <input value="1" class="ratestars star-1" id="star-1" type="radio" name="star">
     <label class="ratestars star-1" for="star-1"></label>
+  </div>
+  <textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl" rows="3" placeholder=" Your suggestions please..."></textarea><p></p>
+  <input class="btn btn-info btn-sm" type="submit" value="Submit Feedback" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+
 </div>
-</div>
-        <form>
-          <div class="form-group Spaceleft">
-              <textarea class="form-control spaceleft" id="exampleFormControlTextarea1" style="max-width: 85%" rows="2" placeholder="Enter your comments here" ></textarea><br>
-              <button type="button" class="btn btn-primary spaceleft" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" id="en">Submit Feedback</button>
-                            <button type="button" class="btn btn-primary spaceleft" id="fr" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">প্রতিক্রিয়া জমা দিন</button>             
-          </div>   
-        </form>
+<!-- Star Rating End -->
+
+
+
+
+      </form>
+
+      <!-- 3rd Question Ends -->
+
+
+<!--         <p style="font-size: 15px; margin-top: -5px">We love you Bagmishree!</p>       -->
+
+      </div>
       </div>
     </div>
 
 
 
-        <!-- Grey patch  -->
 
-    <div class="jumbotron jumbotron-fluid greyedtop2400 border-top">
+
+
+
+  <!-- Section 2 Feedback Ends Here -->
+
+   <!-- Section 2 Based on your profile -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+      	        <h6 style="font-size: 18px; font-weight: 700"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/fac5b998-f21d-4cf6-8b21-29399ba8a741.png" width="25px;"> Test Recommended For You </h6>
+        <p style="font-size: 15px; margin-top: -10px; margin-bottom: 3px;">Based on your age, gender and history</p>
+
+                <div class="border rounded">
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c9f30b5d-2a3d-463e-a128-0756e6508e6b.png" width="100%">
+        <br>
+        <h6 style="font-size: 16px; margin-top: 15px; padding-left: 5px; padding-right: 3px; color:black; font-weight: 700">Evergreen Care</h6>
+        <p style="font-size: 13px; margin-top: -5px; padding-left: 5px; padding-right: 3px; color:black">This test package is ideal for those above 60 years who might be at the risk of chronic diseases. More Details </p>
+
+        <table style="margin-top: -15px;">
+        	<tr>
+        		<td style="font-weight: 900 ; margin-top: -5px; padding-left: 5px; padding-right: 3px; color:black">Rs 1,999</td>
+        		<td width="70" style="text-decoration: line-through; text-align: right; font-size: 14px">Rs 5,090</td>
+        		<td width="60" style=" text-align: center ; color: green ; font-size: 12px">61% OFF </td>        		
+        	</tr>
+        </table>
+
+        <div style="margin-top: 10px; margin-bottom: 10px; margin-left: 5px;">
+        <a href="https://portal.srlworld.com/BookTest/BookTests">
+        <button type="button" class="btn btn-primary">BOOK NOW</button></a>
+        <a href="tel:011-45797234" target="_top">
+        <button type="button" class="btn btn-outline-primary  share-btn" style="margin-left: 5px;">CALL US</button>
+    </div></a>
+
+
+<!--         <p style="font-size: 8px;color: #0076BC; margin-top: -15px; padding-left: 5px; ">March 12, 2019</p> -->
+        </div>
+
+
+    
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 2 Ends Here Based on your profile -->
+
+
+
+ <!-- Section 5 -->
+
+ <!-- Ad -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone4 border-bottom noselect">
+<!--       <div class="container"> -->
+<!--       <div class="insidejumboone">
+ -->
+        <a href="https://play.google.com/store/apps/details?id=com.srllimited.srl&hl=en_IN">
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c71ffabd-e214-48ec-8cfa-2b0aa29cd585.png" width="100%"></a>
+
+
+
+
+<!--       </div> -->
+<!--       </div> -->
+    </div>
+
+  <!-- Section 5 Ends Here -->
+
+
+
+
+
+
+
+
+
+
+  <!-- Section 2 -->
+
+<!-- 
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%">
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e9b4a449-3cb0-4b94-b921-42c65ff3f460.jpg" width="80px"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Download SRL App</span><br>
+            <span style="font-size: 15px; ">Enjoy the benefits of Home Collect<br> with a single tap!</span><br>
+            <span style="color: #0076BC; font-weight: 700; font-size: 15px"><a href="https://play.google.com/store/apps/details?id=com.srllimited.srl&hl=en_IN">Get App </a><i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div> -->
+
+  <!-- Section 2 Ends Here -->
+
+
+  <!-- Section 5 Individual Blocks Including Heart, Diabetes, etc -->
+
+<!-- 
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+        <h6 style="font-size: 18px; font-weight: 700"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/fac5b998-f21d-4cf6-8b21-29399ba8a741.png" width="25px;"> Tests Recommended For You </h6>
+        <p style="font-size: 15px; margin-top: -10px; margin-bottom: 3px;">Based on your age, gender and history</p>
+
+<a href="https://www.srlworld.com/consumers/find-a-test">
+<div class="adbar-hor-small movethisup"> -->
+<!-- Carousel Card 1 -->
+<!--     <table class="border rounded margin bgwhite">
+      <tr >
+        <td>
+          <img src="srl1.png" width="100" height="100" class="rounded-top"><br>
+    
+        </td>
+      </tr>      
+    </table> -->
+<!-- Carousel Card 1 Ends -->
+
+<!-- Carousel Card 2 -->
+<!--     <table class="border  rounded margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL2.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+      
+    </table> -->
+<!-- Carousel Card 2 Ends -->
+
+<!-- Carousel Card 3 -->
+<!--     <table class="border  rounded margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL3.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+     
+    </table> -->
+<!-- Carousel Card 3 Ends -->
+
+
+
+
+<!-- Carousel Card 4 -->
+<!--     <table class="border rounded  margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL 4.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+    
+    </table> -->
+<!-- Carousel Card 4 Ends -->
+
+
+<!-- Carousel Card 5 -->
+<!--     <table class="border  rounded margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL 5.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+    
+    </table> -->
+<!-- Carousel Card 5 Ends -->
+<!--   
+    </div>
+
+</a>
+ -->
+
+
+
+
+
+
+
+<!-- 
+      </div>
+      </div>
+    </div> -->
+
+  <!-- Section 5 Ends Here -->
+
+ <!-- Section 8 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/a895abf4-fc0b-4599-a460-2ce27cbca529.png" width="75px" class="rotate90"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Gift Health Card</span><br>
+            <span style="font-size: 15px; ">Let your loved ones get all the tests<br> they need to enjoy Good Health</span><br>
+            <span style="color: #0076BC; font-weight: 700; font-size: 15px">Buy Now <i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 8 Ends Here -->
+
+    <!-- Section 3 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/923cbac5-4624-40e7-b93c-f3b9cae159fa.png" width="80px" class="rounded-circle"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Find A SRL Center</span><br>
+            <span style="font-size: 15px;">Visit us for superior quality<br> diagnostics services near you.</span><br>
+            <span style="color: #0076BC; font-weight: 700; font-size: 15px"><a href="https://www.google.com/maps/search/srl+diagnostics/@28.5471694,77.2002744,15z">Get Directions </a><i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 3 Ends Here -->
+
+  
+
+  <!-- Fourth Section Starts -->
+ <div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo4">
+
+                <h6 style="font-size: 18px; font-weight: 700; margin-bottom: 10px;"><i class="fas fa-briefcase-medical"></i> Health Packages </h6>
+<!--         <p style="font-size: 15px; margin-top: -5px">We love you Bagmishree!</p> -->
+
+
+
+
+<div class="adbar-hor-small movethisup">
+<!-- Carousel Card 1 -->
+    <table class="border rounded margin bgwhite">
+
+      <tr>
+        <td class="tdsizing">
+        <a href="https://www.srlworld.com/srlcare/complete-care/basic-package">        	
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/94495e75-dc1a-4f18-8734-46f7e3ae6c10.jpg" width="180" height="180" class="rounded-top">
+        </td></a>
+      </tr>
+      <tr>
+
+        <td class="tdsizing bgwhite">
+        <a href="https://www.srlworld.com/srlcare/complete-care/basic-package">        	
+          <h6  style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align: left; color:black">Complete Care</h6>
+          <p span style="font-size: 12px;  margin-left: 5px; text-align: left; color:black">For people of all age groups who want a complete health checkup.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr>
+    </table>
+<!-- Carousel Card 1 Ends -->
+
+<!-- Carousel Card 2 -->
+    <table class="border  rounded margin bgwhite">
+      <tr>
+        <td class="tdsizing">
+        	<a href="https://www.srlworld.com/srlcare/fitness-care/basic-checkup">
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/b0d79273-ddaa-458b-a825-9def1019627d.jpg" width="180" height="180" class="rounded-top">
+        </td></a>
+      </tr>
+      <tr>
+        <td class="tdsizing bgwhite">
+        	<a href="https://www.srlworld.com/srlcare/fitness-care/basic-checkup">
+          <h6 style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align:left; color:black" class="paddingh6">Fitness Care</h6>
+          <p span style="font-size: 12px; margin-left: 5px; text-align:left; color:black">For those who want to improve their workout and endurance.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr>
+    </table>
+<!-- Carousel Card 2 Ends -->
+
+<!-- Carousel Card 3 -->
+    <table class="border  rounded margin bgwhite">
+      <tr>
+        <td class="tdsizing">
+        	<a href="https://www.srlworld.com/srlcare/active-care/Sedentary-lifestyle-package">
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/b2a0fb20-7bed-4d91-8fac-85d966d7e402.jpg" width="180" height="180" class="rounded-top">
+        </td></a>
+      </tr>
+      <tr>
+        <td class="tdsizing bgwhite">
+        	<a href="https://www.srlworld.com/srlcare/active-care/Sedentary-lifestyle-package">
+          <h6 style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align:left; color:black">Active Care
+</h6>
+          <p span style="font-size: 12px;  margin-left: 5px; text-align:left; color:black"> Ideal for those living a 'Sedentary Lifestyle'.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr>
+    </table>
+<!-- Carousel Card 3 Ends -->
+
+
+
+
+<!-- Carousel Card 4 -->
+    <table class="border rounded  margin bgwhite">
+      <tr>
+        <td class="tdsizing">
+        	<a href="https://www.srlworld.com/srlcare/evergreen-care/60-plus-male">
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/399cb3ce-e531-4d8c-b05c-a9647fda0e36.jpg" width="180" height="180" class="rounded-top">
+        </td></a>
+      </tr>
+      <tr>
+        <td class="tdsizing bgwhite">
+        	<a href="https://www.srlworld.com/srlcare/evergreen-care/60-plus-male">
+          <h6 style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align:left; color:black" class="paddingh6">Evergreen Care</h6>
+          <p span style="font-size: 12px; margin-left: 5px; text-align:left; color:black">For aged, who want to get a comprehensive health check up done.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr>
+    </table>
+<!-- Carousel Card 4 Ends -->
+
+
+<!-- Carousel Card 5 -->
+    <table class="border  rounded margin bgwhite">
+      <tr>
+        <td class="tdsizing">
+        	<a href="https://www.srlworld.com/srlcare/vital-care/Diabetes">
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/f4559755-74f0-4278-851c-2d9ff89e7070.jpg" width="180" height="180" class="rounded-top">
+        </td></a>
+      </tr>
+      <tr>
+        <td class="tdsizing bgwhite">
+        	<a href="https://www.srlworld.com/srlcare/vital-care/Diabetes">
+          <h6 style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align:left; color:black"  class="paddingh6">Vital Care</h6>
+          <p span style="font-size: 12px; margin-left: 5px; text-align:left; color:black"> For people having diabetes or are at high risk of developing diabetes.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr>
+    </table>
+<!-- Carousel Card 5 Ends -->
+  
     </div>
 
 
-      
-      
-    <!-- Thank you for giving your valuable feedback Modal -->
+<hr>
+<div>
+        <a href="https://www.srlworld.com/srlcare"> <p style="font-size: 16px; font-weight: 700; margin-top: -5px"><i class="fas fa-arrow-right"></i> All Packages</p></a></div>
+
+
+
+
+  </div>
+    </div>
+  </div>
+
+<!-- Fourth Section Ends Here -->
+
+
+
+
+
+<!-- Section 6 Blog Starts Here -->
+
+<div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo">
+        <h6 style="font-size: 18px; font-weight: 700"><i class="fas fa-newspaper"></i> SRL Blog</h6>
+<!--         <p style="font-size: 15px; margin-top: -5px">I know this doesn't make sense, anyway</p> -->
+
+        <div class="border rounded"><a href="https://www.srlworld.com/blog/keep-heart-healthy/">
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/b7ca8d80-91c2-406f-b129-b5b62379339f.png" width="100%">
+        <br>
+        <h6 style="font-size: 16px; margin-top: 15px; padding-left: 5px; padding-right: 3px; color:black; font-weight: 700">Read: How To Keep Your Heart Healthy?</h6>
+        <p style="font-size: 13px; margin-top: -5px; padding-left: 5px; padding-right: 3px; color:black">Everyone must be aware that heart diseases such as heart attacks, heart failures,...</p></a>
+        <p style="font-size: 8px;color: #0076BC; margin-top: -15px; padding-left: 5px; ">March 12, 2019</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+              </div>
+  </div>
+    </div>
+
+
+<!-- Section 6 Blog Ends Here -->
+
+
+ 
+
+ <!-- Section 9 -->
+
+
+   <!--  <div class="jumbotron jumbotron-fluid jumboone12 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone"> -->
+        
+<div class="jumboone123 noselect">        
+       <table class="jumbotron jumbotron-fluid border-bottom" style="background: white; margin-top: -32px;">
+      <tr>
+        <td height="50" width="200" class="border-right" align="center">
+          <i class="fas fa-phone fa-flip-horizontal"></i> 
+          <a href="tel:1800 22 2000" target="_top">
+            <span style="color: black">Call Us</span>
+        </td></a>
+        <td align="center" width="200">
+        <a href="mailto:connect@srl.in?Subject=Hello%20again" target="_top">
+          <i class="far fa-envelope"></i><span style="color: black"> Email Us</a></span>
+        </td>
+      </tr>
+    </table>
+</div>
+
+  <!-- Section 9 Ends Here -->
+
+
+  <!-- Modal Information Loyalty Points -->
+
+  <div class="modal" tabindex="-1" role="dialog" id="loyaltymodal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--       <div class="modal-header">
+        <h5 class="modal-title">Earning is simple!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+        <p>
+        <span style="font-weight: 700; font-size: 13px;">1. 100 points:</span> Enrolment comes with a Welcome Bonus!<br>
+        <span style="font-weight: 700; font-size: 13px;">2. 50 points: </span>Registering on Mobile App/Portal = earning points<br>
+        <span style="font-weight: 700; font-size: 13px;">3. 10%: Earnin</span>g points for all your spends at SRL diagnostics<br>
+        <span style="font-weight: 700; font-size: 13px;">4. 25 points: </span>Help us know you better: complete your profile and earn points<br>
+        <span style="font-weight: 700; font-size: 13px;">4. 50 points: </span>Book for the first time for a family member and earn points<br>
+        </p>
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Modal Information Loyalty Points Ends Here -->
+
+
+  <!-- Thank you for giving your valuable feedback Modal -->
 
     <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal2">
   <div class="modal-dialog" role="document">
@@ -1204,398 +1038,32 @@ padding: 5px
 </div>
 
 
-    <div class="modal modal-ku fade" tabindex="-1" role="dialog" id="exampleModal243">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <p style="text-align: center;"><i class="fas fa-thumbs-up"></i><br><br>আপনার মূল্যবান মতামত দেওয়ার জন্য ধন্যবাদ।</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >ঘনিষ্ঠ</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
     <!-- Feedback Modal Ends Here -->
 
 
-    <!-- Ad Image -->
-
-    <div id="en">
-    <a href="https://play.google.com/store/apps/details?id=cesc.co.in&hl=en"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/eaed9a16-5a0b-4da4-a6ce-d9750cec4762.png" class="border-bottom imagetop" width="100%"></a>
-    </div>
-
-    <div id="fr">
-    <a href="https://play.google.com/store/apps/details?id=cesc.co.in&hl=en"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/5d915515-fad8-4e77-9c2e-131c651910fe.png" class="border-bottom imagetop" width="100%"></a>
-    </div>
-
-        <!-- Grey patch  -->
-    <div class="jumbotron jumbotron-fluid greyedtop249 border-top">
-    </div>
-
-    <!-- Contact Buttons -->
-    <div id="en">
-    <table class="jumbotron jumbotron-fluid border-bottom noselect" style="background: white; margin-top: -32px;">
-      <tr>
-        <td height="50" width="200" class="border-right" align="center">
-          <i class="fas fa-phone fa-flip-horizontal"></i> 
-          <a href="tel:1860 500 1912" target="_top">
-            <span style="color: black">Call Us</span>
-        </td></a>
-        <td align="center" width="200">
-        <a href="mailto:cesclimited@rp-sg.in?Subject=Hello%20again" target="_top">
-          <i class="far fa-envelope"></i><span style="color: black"> Email Us</a></span>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-       <div id="fr">
-        <table class="jumbotron jumbotron-fluid border-bottom noselect" style="background: white; margin-top: -32px;">
-      <tr>
-        <td height="50" width="200" class="border-right" align="center">
-          <i class="fas fa-phone fa-flip-horizontal"></i> 
-          <a href="tel:1860 500 1912" target="_top">
-            <span style="color: black">আমাদের কল</span>
-        </td></a>
-        <td align="center" width="200">
-        <a href="mailto:cesclimited@rp-sg.in?Subject=Hello%20again" target="_top">
-          <i class="far fa-envelope"></i><span style="color: black"> আমাদেরকে ইমেইল</a></span>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-            <!-- Grey patch  -->
-    <div class="jumbotron jumbotron-fluid greyedtop2490 border-top">
-    </div>
-</div>
-    <!-- Forward Email MODAL -->
-  <div class="modal fade modal-kj" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="en">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Forward Bill</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Enter Email ID:</label>
-            <input type="email" class="form-control" id="recipient-name" placeholder="abc@xyz.com">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Forward</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <div class="modal fade modal-kj" id="exampleModalhj" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="fr">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">ফরওয়ার্ড বিল</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">ইমেইল আইডি লিখুন:</label>
-            <input type="email" class="form-control" id="recipient-name" placeholder="abc@xyz.com">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">বাতিল</button>
-        <button type="button" class="btn btn-primary">অগ্রবর্তী</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
+    <script>
+      document.querySelector('.share-btn').addEventListener('click', function(){
+        console.log('clicked');
+        if (navigator.share) {
+          navigator.share({
+              title: 'SRL Report',
+              text: 'Your SRL report:',
+              url: 'http://wondermail.github.io/SRL/',
+          })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+        }
+      });
+    </script>
 
 
 
-</div>
-</div>
-</div>
-</div>
-    <!-- MODAL Ends Here -->
-    <p id="en_click"  class="poping" style=" font-size: 1px">English</p>
-   <p id="fr_click"   class="poping " style=" font-size: 1px; ">हिंदी</p>
 
 
-    
     <!-- Optional JavaScript -->
-   <script>
-     
-        $('#myFormIndia1').on('submit', function(e) {
-  
-  e.preventDefault(); //stop submit
-  
-  if ($('#myCheckS1').val() !== "") {
-  //Check if checkbox is checked then show modal
-    $('#myModalP1').modal('show');
-  }
-});
-
-// Expand Section Modal
-
-        $('#myFormIndia4555').on('submit', function(e) {
-  
-  e.preventDefault(); //stop submit
-  
-  if ($('#myCheckSuu').val() !== "") {
-  //Check if checkbox is checked then show modal
-    $('#myModalabc').modal('show');
-  }
-});
-
-
-     
-  $('#myFormIndia4555').on('submit', function(e) {
-  
-  e.preventDefault(); //stop submit
-  
-  if ($('#myCheckSuu').is(':checked')) {
-  //Check if checkbox is checked then show modal
-    $('#myModalabc').modal('show');
-  }
-});
-
-
-
-
-
-
-                $('#myFormIndia14').on('submit', function(e) {
-  
-  e.preventDefault(); //stop submit
-  
-  if ($('#myCheckS14').val() !== "") {
-  //Check if checkbox is checked then show modal
-    $('#myModalP146').modal('show');
-  }
-});
-
-     
-     
-     
-     
-  $('#myFormIndia').on('submit', function(e) {
-  
-  e.preventDefault(); //stop submit
-  
-  if ($('#myCheckS').is(':checked')) {
-  //Check if checkbox is checked then show modal
-    $('#myModalP').modal('show');
-  }
-});
-
-
-
-    $('#myFormIndia88').on('submit', function(e) {
-  
-  e.preventDefault(); //stop submit
-  
-  if ($('#myCheckS88').is(':checked')) {
-  //Check if checkbox is checked then show modal
-    $('#myModalP88').modal('show');
-  }
-});
-
-// Script English to bangla
-
-  var french = document.getElementById('fr_click'),
-    english = document.getElementById('en_click'),
-    fr_txt = document.querySelectorAll('#fr'),
-    en_txt = document.querySelectorAll('#en'),
-    nb_fr = fr_txt.length,
-    nb_en = en_txt.length;
-
-french.addEventListener('click', function() {
-    langue(french,english);
-}, false);
-
-english.addEventListener('click', function() {
-    langue(english,french);
-}, false);
-
-function langue(langueOn,langueOff){
-    if (!langueOn.classList.contains('current_lang')) {
-        langueOn.classList.toggle('current_lang');
-        langueOff.classList.toggle('current_lang');
-    }
-    if(langueOn.innerHTML == 'বাংলা'){
-        afficher(fr_txt, nb_fr);
-        cacher(en_txt, nb_en);
-    }
-    else if(langueOn.innerHTML == 'English'){
-        afficher(en_txt, nb_en);
-        cacher(fr_txt, nb_fr);
-    }
-}
-
-function afficher(txt,nb){
-    for(var i=0; i < nb; i++){
-        txt[i].style.display = 'block';
-    }
-}
-function cacher(txt,nb){
-    for(var i=0; i < nb; i++){
-        txt[i].style.display = 'none';
-    }
-}
-function init(){
-    langue(english,french);
-}
-init();
-
-$('#abcd p').on('click', function(){
-    $('p.current').removeClass('current');
-    $(this).addClass('current');
-});
-
-
-
-
-
-  $( "h5" ).click(function() {
-  $( "#fr, #en" ).toggle();
-});
-
-$(".pushme").click(function () {
-            $(this).text(function(i, v){
-               return v === 'English' ? 'বাংলা' : 'English'
-            })
-        });
-
-
-
-
-
-// Script English To Bangla Ends here
-
-
-
-// Modal Form Repairs Starts
-
-$('#exampleModal5500').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
-
-
-
-function yourfunction(radioid)
-{
-if(radioid == 1)
-{    
-    document.getElementById('one').style.display = 'block';
-    document.getElementById('two').style.display = 'none';
-  document.getElementById('three').style.display = 'none';
- }
- else if(radioid == 2)
-{  
-  document.getElementById('three').style.display = 'none';
-  document.getElementById('two').style.display = '';
-    document.getElementById('one').style.display = 'none';
-}
- else if(radioid == 3)
-{  
-  
-  document.getElementById('three').style.display = '';
-  document.getElementById('two').style.display = 'none';
-    document.getElementById('one').style.display = 'none';
-}
-}
-
-
-// Modal Form Repairs Ends
-
-// $('#abcd p').on('click', function(){
-//     $('p.current').removeClass('current');
-//     $(this).addClass('current');
-// });
-
-
-// $(".pushme").click(function () {
-//             $(this).text(function(i, v){
-//                return v === 'English' ? 'বাংলা' : 'English'
-//             })
-//         });
-
-
-
-jQuery(function ($) {
-    $('.select').click(function () {
-        $(this).toggleClass('highlight')
-    })
-})
-
-
-$(document).ready(function(){
-  $("#popopop").click(function(){
-    $(".expsection").toggle();
-  });
-});
-
-
-$(document).ready(function(){
-  $("#popopops").click(function(){
-    $(".expsectionbangla").toggle();
-  });
-});
-
-
-$(document).ready(function(){
-    $(".expsection").hide();
-  $("#popopop").click(function(){
-    $(this).toggleClass(".expsection").next().slideToggle("fast");
-
-
-
-    // $(".expsection").toggle();
-  });
-});
-
-
-$(document).ready(function(){
-    $(".expsectionbangla").hide();
-  $("#popopop").click(function(){
-    $(this).toggleClass(".expsectionbangla").next().slideToggle("fast");
-
-
-
-    // $(".expsection").toggle();
-  });
-});
-
-
-</script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
